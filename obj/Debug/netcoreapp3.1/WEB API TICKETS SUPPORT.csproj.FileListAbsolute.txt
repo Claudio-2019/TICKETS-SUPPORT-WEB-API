@@ -1,0 +1,20 @@
+D:\App de Tickets de Soporte\WEB API TICKETS SUPPORT\WEB API TICKETS SUPPORT\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\App de Tickets de Soporte\WEB API TICKETS SUPPORT\WEB API TICKETS SUPPORT\bin\Debug\netcoreapp3.1\appsettings.json
+D:\App de Tickets de Soporte\WEB API TICKETS SUPPORT\WEB API TICKETS SUPPORT\bin\Debug\netcoreapp3.1\WEB API TICKETS SUPPORT.exe
+D:\App de Tickets de Soporte\WEB API TICKETS SUPPORT\WEB API TICKETS SUPPORT\bin\Debug\netcoreapp3.1\WEB API TICKETS SUPPORT.deps.json
+D:\App de Tickets de Soporte\WEB API TICKETS SUPPORT\WEB API TICKETS SUPPORT\bin\Debug\netcoreapp3.1\WEB API TICKETS SUPPORT.runtimeconfig.json
+D:\App de Tickets de Soporte\WEB API TICKETS SUPPORT\WEB API TICKETS SUPPORT\bin\Debug\netcoreapp3.1\WEB API TICKETS SUPPORT.runtimeconfig.dev.json
+D:\App de Tickets de Soporte\WEB API TICKETS SUPPORT\WEB API TICKETS SUPPORT\bin\Debug\netcoreapp3.1\WEB API TICKETS SUPPORT.dll
+D:\App de Tickets de Soporte\WEB API TICKETS SUPPORT\WEB API TICKETS SUPPORT\bin\Debug\netcoreapp3.1\WEB API TICKETS SUPPORT.pdb
+D:\App de Tickets de Soporte\WEB API TICKETS SUPPORT\WEB API TICKETS SUPPORT\obj\Debug\netcoreapp3.1\WEB API TICKETS SUPPORT.csprojAssemblyReference.cache
+D:\App de Tickets de Soporte\WEB API TICKETS SUPPORT\WEB API TICKETS SUPPORT\obj\Debug\netcoreapp3.1\WEB API TICKETS SUPPORT.AssemblyInfoInputs.cache
+D:\App de Tickets de Soporte\WEB API TICKETS SUPPORT\WEB API TICKETS SUPPORT\obj\Debug\netcoreapp3.1\WEB API TICKETS SUPPORT.AssemblyInfo.cs
+D:\App de Tickets de Soporte\WEB API TICKETS SUPPORT\WEB API TICKETS SUPPORT\obj\Debug\netcoreapp3.1\WEB API TICKETS SUPPORT.csproj.CoreCompileInputs.cache
+D:\App de Tickets de Soporte\WEB API TICKETS SUPPORT\WEB API TICKETS SUPPORT\obj\Debug\netcoreapp3.1\WEB API TICKETS SUPPORT.MvcApplicationPartsAssemblyInfo.cache
+D:\App de Tickets de Soporte\WEB API TICKETS SUPPORT\WEB API TICKETS SUPPORT\obj\Debug\netcoreapp3.1\staticwebassets\WEB API TICKETS SUPPORT.StaticWebAssets.Manifest.cache
+D:\App de Tickets de Soporte\WEB API TICKETS SUPPORT\WEB API TICKETS SUPPORT\obj\Debug\netcoreapp3.1\staticwebassets\WEB API TICKETS SUPPORT.StaticWebAssets.xml
+D:\App de Tickets de Soporte\WEB API TICKETS SUPPORT\WEB API TICKETS SUPPORT\obj\Debug\netcoreapp3.1\scopedcss\bundle\WEB API TICKETS SUPPORT.styles.css
+D:\App de Tickets de Soporte\WEB API TICKETS SUPPORT\WEB API TICKETS SUPPORT\obj\Debug\netcoreapp3.1\WEB API TICKETS SUPPORT.RazorTargetAssemblyInfo.cache
+D:\App de Tickets de Soporte\WEB API TICKETS SUPPORT\WEB API TICKETS SUPPORT\obj\Debug\netcoreapp3.1\WEB API TICKETS SUPPORT.dll
+D:\App de Tickets de Soporte\WEB API TICKETS SUPPORT\WEB API TICKETS SUPPORT\obj\Debug\netcoreapp3.1\WEB API TICKETS SUPPORT.pdb
+D:\App de Tickets de Soporte\WEB API TICKETS SUPPORT\WEB API TICKETS SUPPORT\obj\Debug\netcoreapp3.1\WEB API TICKETS SUPPORT.genruntimeconfig.cache
