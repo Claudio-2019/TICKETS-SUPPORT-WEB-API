@@ -35,6 +35,11 @@ namespace WEB_API_TICKETS_SUPPORT
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseCors(builder =>
+            {
+                builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+
+            });
 
             app.UseHttpsRedirection();
 
