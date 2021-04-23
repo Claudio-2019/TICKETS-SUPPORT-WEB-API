@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Q3KtH/nz0439KJjl96fKPSLw97WF9SaC9BQCbqcIcQwibH8UJ4ymbZMT8V/LULhVmO+e+ltJZTfZAZZsjFJ/JA==",
+  "dgSpecHash": "iOY4u7BJgmUmFhLyxbvM1fNYf6m7mfijD4cFuIubDXX+u8o6GAozFNGwbDAmoFsKdkeFuSOWFwCwndcL3eMgIQ==",
   "success": true,
-  "projectFilePath": "D:\\App de Tickets de Soporte\\WEB API TICKETS SUPPORT\\WEB API TICKETS SUPPORT\\WEB API TICKETS SUPPORT.csproj",
+  "projectFilePath": "D:\\App de Tickets de Soporte\\WEB API TICKETS SUPPORT\\TICKETS-SUPPORT-WEB-API\\WEB API TICKETS SUPPORT.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Soporte TI MBS\\.nuget\\packages\\dnsclient\\1.4.0\\dnsclient.1.4.0.nupkg.sha512",
     "C:\\Users\\Soporte TI MBS\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",

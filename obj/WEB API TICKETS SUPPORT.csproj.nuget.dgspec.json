@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\App de Tickets de Soporte\\WEB API TICKETS SUPPORT\\WEB API TICKETS SUPPORT\\WEB API TICKETS SUPPORT.csproj": {}
+    "D:\\App de Tickets de Soporte\\WEB API TICKETS SUPPORT\\TICKETS-SUPPORT-WEB-API\\WEB API TICKETS SUPPORT.csproj": {}
   },
   "projects": {
-    "D:\\App de Tickets de Soporte\\WEB API TICKETS SUPPORT\\WEB API TICKETS SUPPORT\\WEB API TICKETS SUPPORT.csproj": {
+    "D:\\App de Tickets de Soporte\\WEB API TICKETS SUPPORT\\TICKETS-SUPPORT-WEB-API\\WEB API TICKETS SUPPORT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\App de Tickets de Soporte\\WEB API TICKETS SUPPORT\\WEB API TICKETS SUPPORT\\WEB API TICKETS SUPPORT.csproj",
+        "projectUniqueName": "D:\\App de Tickets de Soporte\\WEB API TICKETS SUPPORT\\TICKETS-SUPPORT-WEB-API\\WEB API TICKETS SUPPORT.csproj",
         "projectName": "WEB API TICKETS SUPPORT",
-        "projectPath": "D:\\App de Tickets de Soporte\\WEB API TICKETS SUPPORT\\WEB API TICKETS SUPPORT\\WEB API TICKETS SUPPORT.csproj",
+        "projectPath": "D:\\App de Tickets de Soporte\\WEB API TICKETS SUPPORT\\TICKETS-SUPPORT-WEB-API\\WEB API TICKETS SUPPORT.csproj",
         "packagesPath": "C:\\Users\\Soporte TI MBS\\.nuget\\packages\\",
-        "outputPath": "D:\\App de Tickets de Soporte\\WEB API TICKETS SUPPORT\\WEB API TICKETS SUPPORT\\obj\\",
+        "outputPath": "D:\\App de Tickets de Soporte\\WEB API TICKETS SUPPORT\\TICKETS-SUPPORT-WEB-API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
