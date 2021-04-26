@@ -16,5 +16,6 @@ namespace WEB_API_TICKETS_SUPPORT.Interfaces
         Task DeleteUser(string _id);
 
         Task UpdateUser(UserRegisterModel update);
+     
     }
 }

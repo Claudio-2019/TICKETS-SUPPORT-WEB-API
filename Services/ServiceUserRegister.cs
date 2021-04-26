@@ -42,9 +42,11 @@ namespace WEB_API_TICKETS_SUPPORT.Services
         {
             return await CollectionAdministrators.FindAsync(new BsonDocument()).Result.ToListAsync();
         }
-        public Task DeleteUser(string _id)
+        public async Task DeleteUser(string _id)
         {
-            throw new NotImplementedException();
+            var FiltroConsulta = Builders<UserRegisterModel>.Filter.Eq(X => X._id, _id);
+
+            await CollectionUsers.DeleteOneAsync(FiltroConsulta);
         }
         public async Task UpdateUser(UserRegisterModel update)
         {
