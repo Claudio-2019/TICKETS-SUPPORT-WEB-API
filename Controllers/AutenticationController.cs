@@ -17,12 +17,14 @@ namespace WEB_API_TICKETS_SUPPORT.Controllers
         private ServiceUserRegister RegisterUserService = new ServiceUserRegister();
         private readonly ArrayList listaUsuario = new ArrayList();
         private readonly ArrayList listaAdministradores = new ArrayList();
+        private readonly ArrayList CurrentUserLogged = new ArrayList();
         private List<string> RolEncontrado = new List<string>();
 
         [HttpPost]
         public async Task<IActionResult> GetUserAuth([FromBody] UserRegisterModel credentials)
         {
             string[] roles = { "User", "Admin" };
+            string[] Session;
 
             var sesionCurrentUsers = await RegisterUserService.GetCurrentUsers();
             var sesionCurrentAdmins = await RegisterUserService.GetCurrentAdmin();
@@ -47,8 +49,11 @@ namespace WEB_API_TICKETS_SUPPORT.Controllers
             {
                 if (listaUsuario.Contains(credentials.Email) && listaUsuario.Contains(credentials.Pass))
                 {
+
+                    var session = RegisterUserService.GetCurrentSessionUser(credentials.Email);
+
                     RolEncontrado.Add(roles[0]);
-                    return Ok(RolEncontrado);
+                    return Ok(session);
                 }
                 else if (listaAdministradores.Contains(credentials.Email) && listaAdministradores.Contains(credentials.Pass))
                 {
@@ -61,5 +66,6 @@ namespace WEB_API_TICKETS_SUPPORT.Controllers
                 }
             }
         }
+
     }
 }

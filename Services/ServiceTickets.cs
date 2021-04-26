@@ -15,33 +15,33 @@ namespace WEB_API_TICKETS_SUPPORT.Services
 
         internal DatabaseConnection accessDB = new DatabaseConnection();
 
-        private readonly IMongoCollection<TicketRequest> CollectionTickets;
+        private readonly IMongoCollection<TicketRequestModel> CollectionTickets;
 
         public ServiceTickets()
         {
-            CollectionTickets = accessDB.database.GetCollection<TicketRequest>("CurrentTickets");
+            CollectionTickets = accessDB.database.GetCollection<TicketRequestModel>("CurrentTickets");
         }
 
-        public async Task CreateTicket(TicketRequest newTickets)
+        public async Task CreateTicket(TicketRequestModel newTickets)
         {
             await CollectionTickets.InsertOneAsync(newTickets);
         }
 
         public async Task DeleteTicket(string id)
         {
-            var FiltroConsulta = Builders<TicketRequest>.Filter.Eq(X => X._id, id);
+            var FiltroConsulta = Builders<TicketRequestModel>.Filter.Eq(X => X._id, id);
 
             await CollectionTickets.DeleteOneAsync(FiltroConsulta);
         }
 
-        public async Task<List<TicketRequest>> GetCurrentTickets()
+        public async Task<List<TicketRequestModel>> GetCurrentTickets()
         {
             return await CollectionTickets.FindAsync(new BsonDocument()).Result.ToListAsync();
         }
 
-        public async Task UpdateTicket(TicketRequest updateTicket)
+        public async Task UpdateTicket(string id, TicketRequestModel updateTicket)
         {
-            var FiltroConsulta = Builders<TicketRequest>.Filter.Eq(X => X._id, updateTicket._id);
+            var FiltroConsulta = Builders<TicketRequestModel>.Filter.Eq(X => X._id, updateTicket._id);
 
             await CollectionTickets.ReplaceOneAsync(FiltroConsulta, updateTicket);
         }

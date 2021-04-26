@@ -27,7 +27,7 @@ namespace WEB_API_TICKETS_SUPPORT.Controllers
             }
             else if (User != null && user.Role == "Admin")
             {
-                UserAdminRegister AdminData = new UserAdminRegister()
+                UserAdminRegisterModel AdminData = new UserAdminRegisterModel()
                 {
                     Name = user.Name,
                     LastName = user.LastName,

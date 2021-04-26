@@ -9,13 +9,15 @@ namespace WEB_API_TICKETS_SUPPORT.Interfaces
     interface IUserRegister
     {
         Task CreateUserAccount(UserRegisterModel UserData);
-        Task CreateAdminAccount(UserAdminRegister AdminData);
+        Task CreateAdminAccount(UserAdminRegisterModel AdminData);
         Task<List<UserRegisterModel>> GetCurrentUsers();
-        Task<List<UserAdminRegister>> GetCurrentAdmin();
+        Task<List<UserAdminRegisterModel>> GetCurrentAdmin();
 
         Task DeleteUser(string _id);
 
         Task UpdateUser(UserRegisterModel update);
+
+        Task<List<UserRegisterModel>> GetCurrentSessionUser(string email);
      
     }
 }

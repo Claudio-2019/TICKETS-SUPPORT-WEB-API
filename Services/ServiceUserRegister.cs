@@ -17,20 +17,20 @@ namespace WEB_API_TICKETS_SUPPORT.Services
 
         private readonly IMongoCollection<UserRegisterModel> CollectionUsers;
 
-        private readonly IMongoCollection<UserAdminRegister> CollectionAdministrators;
+        private readonly IMongoCollection<UserAdminRegisterModel> CollectionAdministrators;
 
         public ServiceUserRegister()
         {
             CollectionUsers = accessDB.database.GetCollection<UserRegisterModel>("CurrentUsers");
 
-            CollectionAdministrators = accessDB.database.GetCollection<UserAdminRegister>("CurrentAdministrators");
+            CollectionAdministrators = accessDB.database.GetCollection<UserAdminRegisterModel>("CurrentAdministrators");
         }
 
         public async Task CreateUserAccount(UserRegisterModel UserData)
         {
             await CollectionUsers.InsertOneAsync(UserData);
         }
-        public async Task CreateAdminAccount(UserAdminRegister AdminData)
+        public async Task CreateAdminAccount(UserAdminRegisterModel AdminData)
         {
             await CollectionAdministrators.InsertOneAsync(AdminData);
         }
@@ -38,7 +38,7 @@ namespace WEB_API_TICKETS_SUPPORT.Services
         {
             return await CollectionUsers.FindAsync(new BsonDocument()).Result.ToListAsync();
         }
-        public async Task<List<UserAdminRegister>> GetCurrentAdmin()
+        public async Task<List<UserAdminRegisterModel>> GetCurrentAdmin()
         {
             return await CollectionAdministrators.FindAsync(new BsonDocument()).Result.ToListAsync();
         }
@@ -54,7 +54,17 @@ namespace WEB_API_TICKETS_SUPPORT.Services
 
             await CollectionUsers.ReplaceOneAsync(FiltroConsulta, update);
         }
+        //Search for Session User
+        public async Task<List<UserRegisterModel>> GetCurrentSessionUser(string email)
+        {
+            var FiltroConsulta = Builders<UserRegisterModel>.Filter.Eq("Email",email);
+
+            return await CollectionUsers.FindAsync(FiltroConsulta).Result.ToListAsync();
+        }
 
       
+
+
+
     }
 }
