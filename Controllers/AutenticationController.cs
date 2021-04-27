@@ -51,14 +51,30 @@ namespace WEB_API_TICKETS_SUPPORT.Controllers
                 {
 
                     var session = RegisterUserService.GetCurrentSessionUser(credentials.Email);
-
+                    foreach (UserRegisterModel item in session.Result)
+                    {
+                        CurrentUserLogged.Add(item.Name);
+                        CurrentUserLogged.Add(item.LastName);
+                        CurrentUserLogged.Add(item.Email);
+                        CurrentUserLogged.Add(item.Role);
+                        
+                    }
                     RolEncontrado.Add(roles[0]);
-                    return Ok(session);
+                    return Ok(CurrentUserLogged);
                 }
                 else if (listaAdministradores.Contains(credentials.Email) && listaAdministradores.Contains(credentials.Pass))
                 {
-                    RolEncontrado.Add(roles[1]);
-                    return Ok(RolEncontrado);
+                    var session = RegisterUserService.GetCurrentSessionAdministrator(credentials.Email);
+                    foreach (UserAdminRegisterModel item in session.Result)
+                    {
+                        CurrentUserLogged.Add(item.Name);
+                        CurrentUserLogged.Add(item.LastName);
+                        CurrentUserLogged.Add(item.Email);
+                        CurrentUserLogged.Add(item.Role);
+
+                    }
+                    RolEncontrado.Add(roles[0]);
+                    return Ok(CurrentUserLogged);
                 }
                 else
                 {

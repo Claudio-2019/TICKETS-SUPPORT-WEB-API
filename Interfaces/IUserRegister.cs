@@ -18,6 +18,7 @@ namespace WEB_API_TICKETS_SUPPORT.Interfaces
         Task UpdateUser(UserRegisterModel update);
 
         Task<List<UserRegisterModel>> GetCurrentSessionUser(string email);
-     
+        Task<List<UserAdminRegisterModel>> GetCurrentSessionAdministrator(string email);
+
     }
 }

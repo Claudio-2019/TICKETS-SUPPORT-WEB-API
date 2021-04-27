@@ -61,8 +61,14 @@ namespace WEB_API_TICKETS_SUPPORT.Services
 
             return await CollectionUsers.FindAsync(FiltroConsulta).Result.ToListAsync();
         }
+        public async Task<List<UserAdminRegisterModel>> GetCurrentSessionAdministrator(string email)
+        {
+            var FiltroConsulta = Builders<UserAdminRegisterModel>.Filter.Eq("Email", email);
 
-      
+            return await CollectionAdministrators.FindAsync(FiltroConsulta).Result.ToListAsync();
+        }
+
+
 
 
 

@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\App de Tickets de Soporte\\WEB API TICKETS SUPPORT\\TICKETS-SUPPORT-WEB-API\\WEB API TICKETS SUPPORT.csproj": {}
+    "C:\\Users\\ClaudioPC\\Desktop\\Desarollo de software\\WEB\\ASP NET CORE + ANGULAR\\Tickets Support App\\TICKETS-SUPPORT-WEB-API\\WEB API TICKETS SUPPORT.csproj": {}
   },
   "projects": {
-    "D:\\App de Tickets de Soporte\\WEB API TICKETS SUPPORT\\TICKETS-SUPPORT-WEB-API\\WEB API TICKETS SUPPORT.csproj": {
+    "C:\\Users\\ClaudioPC\\Desktop\\Desarollo de software\\WEB\\ASP NET CORE + ANGULAR\\Tickets Support App\\TICKETS-SUPPORT-WEB-API\\WEB API TICKETS SUPPORT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\App de Tickets de Soporte\\WEB API TICKETS SUPPORT\\TICKETS-SUPPORT-WEB-API\\WEB API TICKETS SUPPORT.csproj",
+        "projectUniqueName": "C:\\Users\\ClaudioPC\\Desktop\\Desarollo de software\\WEB\\ASP NET CORE + ANGULAR\\Tickets Support App\\TICKETS-SUPPORT-WEB-API\\WEB API TICKETS SUPPORT.csproj",
         "projectName": "WEB API TICKETS SUPPORT",
-        "projectPath": "D:\\App de Tickets de Soporte\\WEB API TICKETS SUPPORT\\TICKETS-SUPPORT-WEB-API\\WEB API TICKETS SUPPORT.csproj",
-        "packagesPath": "C:\\Users\\Soporte TI MBS\\.nuget\\packages\\",
-        "outputPath": "D:\\App de Tickets de Soporte\\WEB API TICKETS SUPPORT\\TICKETS-SUPPORT-WEB-API\\obj\\",
+        "projectPath": "C:\\Users\\ClaudioPC\\Desktop\\Desarollo de software\\WEB\\ASP NET CORE + ANGULAR\\Tickets Support App\\TICKETS-SUPPORT-WEB-API\\WEB API TICKETS SUPPORT.csproj",
+        "packagesPath": "C:\\Users\\ClaudioPC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ClaudioPC\\Desktop\\Desarollo de software\\WEB\\ASP NET CORE + ANGULAR\\Tickets Support App\\TICKETS-SUPPORT-WEB-API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Soporte TI MBS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ClaudioPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
