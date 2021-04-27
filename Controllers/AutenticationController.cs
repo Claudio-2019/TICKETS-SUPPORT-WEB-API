@@ -24,7 +24,7 @@ namespace WEB_API_TICKETS_SUPPORT.Controllers
         public async Task<IActionResult> GetUserAuth([FromBody] UserRegisterModel credentials)
         {
             string[] roles = { "User", "Admin" };
-            string[] Session;
+           
 
             var sesionCurrentUsers = await RegisterUserService.GetCurrentUsers();
             var sesionCurrentAdmins = await RegisterUserService.GetCurrentAdmin();
@@ -57,9 +57,9 @@ namespace WEB_API_TICKETS_SUPPORT.Controllers
                         CurrentUserLogged.Add(item.LastName);
                         CurrentUserLogged.Add(item.Email);
                         CurrentUserLogged.Add(item.Role);
-                        
+                        CurrentUserLogged.Add(item.Phone);
                     }
-                    RolEncontrado.Add(roles[0]);
+                   
                     return Ok(CurrentUserLogged);
                 }
                 else if (listaAdministradores.Contains(credentials.Email) && listaAdministradores.Contains(credentials.Pass))
@@ -73,7 +73,7 @@ namespace WEB_API_TICKETS_SUPPORT.Controllers
                         CurrentUserLogged.Add(item.Role);
 
                     }
-                    RolEncontrado.Add(roles[0]);
+                    
                     return Ok(CurrentUserLogged);
                 }
                 else
@@ -82,6 +82,7 @@ namespace WEB_API_TICKETS_SUPPORT.Controllers
                 }
             }
         }
+     
 
     }
 }

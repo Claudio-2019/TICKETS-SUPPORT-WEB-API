@@ -12,5 +12,6 @@ namespace WEB_API_TICKETS_SUPPORT.Interfaces
         Task<List<TicketRequestModel>> GetCurrentTickets();
         Task UpdateTicket(string id, TicketRequestModel updateTicket);
         Task DeleteTicket(string id);
+        Task<List<TicketRequestModel>> GetUserProfileTickets(string name);
     }
 }

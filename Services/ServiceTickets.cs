@@ -45,5 +45,12 @@ namespace WEB_API_TICKETS_SUPPORT.Services
 
             await CollectionTickets.ReplaceOneAsync(FiltroConsulta, updateTicket);
         }
+
+        public async Task<List<TicketRequestModel>> GetUserProfileTickets(string nameClient)
+        {
+            var FiltroConsulta = Builders<TicketRequestModel>.Filter.Eq("Name", nameClient);
+
+            return await CollectionTickets.FindAsync(FiltroConsulta).Result.ToListAsync();
+        }
     }
 }
