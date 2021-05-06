@@ -57,8 +57,6 @@ namespace WEB_API_TICKETS_SUPPORT.Controllers
                         TicketNumber = item.TicketNumber,
                         TypeRequest = item.TypeRequest,
                         Details=item.Details});
-                   
-
                 }
 
                 return Ok(TicketsFromUser);

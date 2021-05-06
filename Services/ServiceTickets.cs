@@ -3,6 +3,8 @@ using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Net.Mail;
 using System.Threading.Tasks;
 using WEB_API_TICKETS_SUPPORT.Interfaces;
 using WEB_API_TICKETS_SUPPORT.Models;
@@ -25,6 +27,36 @@ namespace WEB_API_TICKETS_SUPPORT.Services
         public async Task CreateTicket(TicketRequestModel newTickets)
         {
             await CollectionTickets.InsertOneAsync(newTickets);
+
+            await Task.Run(() =>
+            {
+
+                MailMessage notificacion = new MailMessage();
+                SmtpClient servicioSMTP = new SmtpClient();
+                notificacion.From = new MailAddress("cgonzalez@mbs.ed.cr", "Soporte Tecnico");
+                notificacion.To.Add(new MailAddress(newTickets.Email));
+                notificacion.Subject = "Notificacion de solicitud de soporte tecnico: " + newTickets.TicketNumber;
+                notificacion.IsBodyHtml = true;
+                notificacion.Body =
+                "<div style='border-style: solid; border-color: black';>" +
+                "<h2 style='margin-left: 1cm;'>Su solicitud de soporte tecnico a sido recibida</h2>" +
+                "<hr style='margin-left: 0.5cm;'> " +
+                "<h2 style='margin-left: 0.5cm;'>Detalles:</h2>" +
+                "<ul>" +
+                "<li> Numero de Ticket:" + newTickets.TicketNumber + "</li>" +
+                "<hr>" +
+                "<li> Detalles de la solicitud:" + "<br>" + newTickets.Details + "</li>" +
+                "</ul>" +
+                "</div>";
+                servicioSMTP.Port = 587;
+                servicioSMTP.Host = "smtp.gmail.com";
+                servicioSMTP.EnableSsl = true;
+                servicioSMTP.UseDefaultCredentials = false;
+                servicioSMTP.Credentials = new NetworkCredential("cgonzalez@mbs.ed.cr", "IT.s0p0rt3.MBS1");
+                servicioSMTP.DeliveryMethod = SmtpDeliveryMethod.Network;
+                servicioSMTP.Send(notificacion);
+
+            });
         }
 
         public async Task DeleteTicket(string id)
