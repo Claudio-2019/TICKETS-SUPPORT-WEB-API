@@ -35,7 +35,7 @@ namespace WEB_API_TICKETS_SUPPORT.Services.EmailService
                 {
                     MailMessage notificacion = new MailMessage();
                     SmtpClient servicioSMTP = new SmtpClient();
-                    notificacion.From = new MailAddress("cgonzalez@mbs.ed.cr", "Soporte Tecnico");
+                    notificacion.From = new MailAddress(email, "Soporte Tecnico");
                     notificacion.To.Add(new MailAddress(message.EmailAddress));
                     notificacion.Subject = message.Subject;
                     notificacion.IsBodyHtml = true;
