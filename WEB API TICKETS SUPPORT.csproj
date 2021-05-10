@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>WEB_API_TICKETS_SUPPORT</RootNamespace>
+    <UserSecretsId>8f2b7f5e-e1a9-489f-bc51-7fb0f141a647</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

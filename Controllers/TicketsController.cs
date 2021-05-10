@@ -24,7 +24,7 @@ namespace WEB_API_TICKETS_SUPPORT.Controllers
             {
                 await TicketsService.CreateTicket(ticket);
 
-                return Ok("SE HA GENERADO EL TICKET: " + ticket.TicketNumber + "SERA ATENDIDO EN LA PRO NTO POSIBLE DEPENDIENDO DE LA COLA DE TICKETS");
+                return Ok("SE HA GENERADO EL TICKET: " + ticket.TicketNumber + " SERA ATENDIDO EN LA PRO NTO POSIBLE DEPENDIENDO DE LA COLA DE TICKETS");
             }
             else if (ticket.Name == "" || ticket.Email == "" || ticket.Details == "")
             {
@@ -74,7 +74,6 @@ namespace WEB_API_TICKETS_SUPPORT.Controllers
         public async Task<IActionResult> DeleteTicket([FromBody] TicketRequestModel id)
         {
             if (id.Equals(""))
-
             {
                 return BadRequest("EL ID DEL PRODUCTO NO ES VALIDO, VERIFIQUE LA INFORMACION CON EL ADMINISTRADOR");
             }
@@ -82,7 +81,8 @@ namespace WEB_API_TICKETS_SUPPORT.Controllers
             {
                 await TicketsService.DeleteTicket(id._id);
 
-                return Ok("EL TICKET: " + id.TicketNumber + " HA SIDO ELIMINADO!");
+
+                return Ok("EL TICKET: " + id.TicketNumber + " HA SIDO COMPLETADO!");
             }
         }
         [HttpPut]
@@ -90,13 +90,13 @@ namespace WEB_API_TICKETS_SUPPORT.Controllers
         {
             if (updatedTicket == null || updatedTicket.Equals(""))
             {
-                return BadRequest("PRODUCTO NO VALIDO, VERIFICAR INFORMACION");
+                return BadRequest("TICKET NO VALIDO, VERIFICAR INFORMACION");
             }
             else
             {
                 await TicketsService.UpdateTicket(updatedTicket._id, updatedTicket);
 
-                return Ok("EL CAMBIO FUE EXITOSO");
+                return Ok("EL CAMBIO FUE EXITOSO EN EL TICKET: "+updatedTicket.TicketNumber);
             }
         }
     }
