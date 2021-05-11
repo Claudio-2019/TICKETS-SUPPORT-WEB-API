@@ -14,7 +14,7 @@ namespace WEB_API_TICKETS_SUPPORT.Controllers
     [ApiController]
     public class TicketsController : ControllerBase
     {
-        private ServiceTickets TicketsService = new ServiceTickets();
+        private readonly ServiceTickets TicketsService = new ServiceTickets();
 
         [HttpPost]
         public async Task<IActionResult> PostTicket([FromBody] TicketRequestModel ticket)

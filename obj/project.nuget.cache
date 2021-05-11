@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "zubwcDR54LZxEaJtM64pOhVpGjcfPKZPFCmzrWW0RsjpHh6DlxjfykwWTMLBchFlIMZVTfqGUOreBDml/vQ4FQ==",
+  "dgSpecHash": "BCH3aXD5Zh6xgRAD4YHRd2jxhNBiiZV3uLFXa0ELN+7lyxf2B1FR8fVeJP+rzIyIG1atbNQ9or7vh9SvJAdVjA==",
   "success": true,
   "projectFilePath": "D:\\App de Tickets de Soporte\\TICKETS-SUPPORT-WEB-API\\WEB API TICKETS SUPPORT.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Soporte TI MBS\\.nuget\\packages\\dnsclient\\1.4.0\\dnsclient.1.4.0.nupkg.sha512",
     "C:\\Users\\Soporte TI MBS\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",
+    "C:\\Users\\Soporte TI MBS\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.13\\microsoft.visualstudio.azure.containers.tools.targets.1.10.13.nupkg.sha512",
     "C:\\Users\\Soporte TI MBS\\.nuget\\packages\\mongodb.bson\\2.12.2\\mongodb.bson.2.12.2.nupkg.sha512",
     "C:\\Users\\Soporte TI MBS\\.nuget\\packages\\mongodb.driver\\2.12.2\\mongodb.driver.2.12.2.nupkg.sha512",
     "C:\\Users\\Soporte TI MBS\\.nuget\\packages\\mongodb.driver.core\\2.12.2\\mongodb.driver.core.2.12.2.nupkg.sha512",
