@@ -18,7 +18,8 @@ namespace WEB_API_TICKETS_SUPPORT.Controllers
         [HttpGet]
         public async Task<IActionResult> GetContacts()
         {
-            return Ok(serviceContact.GetContacts().Result.ToList());
+            var contacts = await serviceContact.GetContacts();
+            return Ok(contacts);
         }
 
         [HttpPost]

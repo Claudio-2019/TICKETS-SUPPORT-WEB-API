@@ -52,8 +52,7 @@ namespace WEB_API_TICKETS_SUPPORT
                 endpoints.MapControllers();
             });
 
-            app.UseDefaultFiles();
-            app.UseStaticFiles();
+          
         }
     }
 }
