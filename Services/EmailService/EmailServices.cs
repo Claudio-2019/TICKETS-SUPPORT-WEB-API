@@ -35,7 +35,7 @@ namespace WEB_API_TICKETS_SUPPORT.Services.EmailService
                 {
                     MailMessage notificacion = new MailMessage();
                     SmtpClient servicioSMTP = new SmtpClient();
-                    notificacion.From = new MailAddress(email, "Soporte Tecnico");
+                    notificacion.From = new MailAddress(email, "Technical Support Admin");
                     notificacion.To.Add(new MailAddress(message.EmailAddress));
                     notificacion.Subject = message.Subject;
                     notificacion.IsBodyHtml = true;
@@ -43,7 +43,7 @@ namespace WEB_API_TICKETS_SUPPORT.Services.EmailService
                     "<div style='border-style: solid; border-color: black';>" +
                     "<h2 style='margin-left: 1cm;'>Asunto: " + message.Subject + "</h2>" +
                     "<hr style='margin-left: 0.5cm;'> " +
-                    "<h2 style='margin-left: 0.5cm;'>Detalles:</h2>" +
+                    "<h2 style='margin-left: 0.5cm;'>Details:</h2>" +
                     "<h3> " + message.Message + "</h3>";
                     servicioSMTP.Port = 587;
                     servicioSMTP.Host = "smtp.gmail.com";

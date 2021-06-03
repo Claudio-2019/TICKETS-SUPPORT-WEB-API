@@ -33,19 +33,19 @@ namespace WEB_API_TICKETS_SUPPORT.Services
 
                 MailMessage notificacion = new MailMessage();
                 SmtpClient servicioSMTP = new SmtpClient();
-                notificacion.From = new MailAddress("cgonzalez@mbs.ed.cr", "Soporte Tecnico");
+                notificacion.From = new MailAddress("cgonzalez@mbs.ed.cr", "Technical Support");
                 notificacion.To.Add(new MailAddress(newTickets.Email));
-                notificacion.Subject = "Notificacion de solicitud de soporte tecnico: " + newTickets.TicketNumber;
+                notificacion.Subject = "Technical Support Request Notification: " + newTickets.TicketNumber;
                 notificacion.IsBodyHtml = true;
                 notificacion.Body =
                 "<div style='border-style: solid; border-color: black';>" +
-                "<h2 style='margin-left: 1cm;'>Su solicitud de soporte tecnico a sido recibida</h2>" +
+                "<h2 style='margin-left: 1cm;'>Your request for technical support has been received.</h2>" +
                 "<hr style='margin-left: 0.5cm;'> " +
-                "<h2 style='margin-left: 0.5cm;'>Detalles:</h2>" +
+                "<h2 style='margin-left: 0.5cm;'>Details:</h2>" +
                 "<ul>" +
-                "<li> Numero de Ticket:" + newTickets.TicketNumber + "</li>" +
+                "<li> Ticket Number:" + newTickets.TicketNumber + "</li>" +
                 "<hr>" +
-                "<li> Detalles de la solicitud:" + "<br>" + newTickets.Details + "</li>" +
+                "<li> Request Details:" + "<br>" + newTickets.Details + "</li>" +
                 "</ul>" +
                 "</div>";
                 servicioSMTP.Port = 587;
