@@ -18,17 +18,21 @@ namespace WEB_API_TICKETS_SUPPORT.Services
         private readonly IMongoCollection<UserRegisterModel> CollectionUsers;
 
         private readonly IMongoCollection<UserAdminRegisterModel> CollectionAdministrators;
+        private readonly IMongoCollection<UserRegisterModel> CollectionRegistrations;
 
         public ServiceUserRegister()
         {
             CollectionUsers = accessDB.database.GetCollection<UserRegisterModel>("CurrentUsers");
 
             CollectionAdministrators = accessDB.database.GetCollection<UserAdminRegisterModel>("CurrentAdministrators");
+
+            CollectionRegistrations = accessDB.database.GetCollection<UserRegisterModel>("SystemRegistrations");
+
         }
 
         public async Task CreateUserAccount(UserRegisterModel UserData)
         {
-            await CollectionUsers.InsertOneAsync(UserData);
+            await CollectionRegistrations.InsertOneAsync(UserData);
         }
         public async Task CreateAdminAccount(UserAdminRegisterModel AdminData)
         {
