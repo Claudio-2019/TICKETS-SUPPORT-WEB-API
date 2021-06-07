@@ -6,6 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using WEB_API_TICKETS_SUPPORT.Models;
 using WEB_API_TICKETS_SUPPORT.Services;
+using WEB_API_TICKETS_SUPPORT.Services.SystemRegistrations;
 
 namespace WEB_API_TICKETS_SUPPORT.Controllers
 {
@@ -14,6 +15,7 @@ namespace WEB_API_TICKETS_SUPPORT.Controllers
     public class RegisterController : ControllerBase
     {
         private ServiceUserRegister RegisterUserService = new ServiceUserRegister();
+        private ServiceRegistrations systemRegister = new ServiceRegistrations();
 
         [HttpPost]
         public async Task<IActionResult> PostNewUser([FromBody] UserRegisterModel user)
