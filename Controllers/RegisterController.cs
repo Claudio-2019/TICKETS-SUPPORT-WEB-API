@@ -48,5 +48,11 @@ namespace WEB_API_TICKETS_SUPPORT.Controllers
             }
 
         }
+
+        [HttpGet]
+        public async Task<IActionResult> GetRegistrations()
+        {
+            return Ok(await systemRegister.GetCurrentRegistrations());
+        }
     }
 }
