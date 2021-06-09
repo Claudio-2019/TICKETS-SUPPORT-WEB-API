@@ -32,3 +32,38 @@ D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\W
 D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\WEB API TICKETS SUPPORT.dll
 D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\WEB API TICKETS SUPPORT.pdb
 D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\WEB API TICKETS SUPPORT.genruntimeconfig.cache
+E:\DESARROLLOS DE SOFTWARE\ANGULAR + ASP NET CORE\Tickets Support App\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\appsettings.Development.json
+E:\DESARROLLOS DE SOFTWARE\ANGULAR + ASP NET CORE\Tickets Support App\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\appsettings.json
+E:\DESARROLLOS DE SOFTWARE\ANGULAR + ASP NET CORE\Tickets Support App\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\Properties\launchSettings.json
+E:\DESARROLLOS DE SOFTWARE\ANGULAR + ASP NET CORE\Tickets Support App\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\Properties\ServiceDependencies\WEBAPITICKETSSUPPORT20210607091925 - Web Deploy\profile.arm.json
+E:\DESARROLLOS DE SOFTWARE\ANGULAR + ASP NET CORE\Tickets Support App\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\WEB API TICKETS SUPPORT.exe
+E:\DESARROLLOS DE SOFTWARE\ANGULAR + ASP NET CORE\Tickets Support App\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\WEB API TICKETS SUPPORT.deps.json
+E:\DESARROLLOS DE SOFTWARE\ANGULAR + ASP NET CORE\Tickets Support App\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\WEB API TICKETS SUPPORT.runtimeconfig.json
+E:\DESARROLLOS DE SOFTWARE\ANGULAR + ASP NET CORE\Tickets Support App\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\WEB API TICKETS SUPPORT.runtimeconfig.dev.json
+E:\DESARROLLOS DE SOFTWARE\ANGULAR + ASP NET CORE\Tickets Support App\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\WEB API TICKETS SUPPORT.dll
+E:\DESARROLLOS DE SOFTWARE\ANGULAR + ASP NET CORE\Tickets Support App\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\WEB API TICKETS SUPPORT.pdb
+E:\DESARROLLOS DE SOFTWARE\ANGULAR + ASP NET CORE\Tickets Support App\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\DnsClient.dll
+E:\DESARROLLOS DE SOFTWARE\ANGULAR + ASP NET CORE\Tickets Support App\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\MongoDB.Bson.dll
+E:\DESARROLLOS DE SOFTWARE\ANGULAR + ASP NET CORE\Tickets Support App\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\MongoDB.Driver.dll
+E:\DESARROLLOS DE SOFTWARE\ANGULAR + ASP NET CORE\Tickets Support App\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\MongoDB.Driver.Core.dll
+E:\DESARROLLOS DE SOFTWARE\ANGULAR + ASP NET CORE\Tickets Support App\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\MongoDB.Libmongocrypt.dll
+E:\DESARROLLOS DE SOFTWARE\ANGULAR + ASP NET CORE\Tickets Support App\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\SharpCompress.dll
+E:\DESARROLLOS DE SOFTWARE\ANGULAR + ASP NET CORE\Tickets Support App\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+E:\DESARROLLOS DE SOFTWARE\ANGULAR + ASP NET CORE\Tickets Support App\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\runtimes\win\native\libzstd.dll
+E:\DESARROLLOS DE SOFTWARE\ANGULAR + ASP NET CORE\Tickets Support App\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\runtimes\win\native\snappy32.dll
+E:\DESARROLLOS DE SOFTWARE\ANGULAR + ASP NET CORE\Tickets Support App\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\runtimes\win\native\snappy64.dll
+E:\DESARROLLOS DE SOFTWARE\ANGULAR + ASP NET CORE\Tickets Support App\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\runtimes\linux\native\libmongocrypt.so
+E:\DESARROLLOS DE SOFTWARE\ANGULAR + ASP NET CORE\Tickets Support App\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\runtimes\osx\native\libmongocrypt.dylib
+E:\DESARROLLOS DE SOFTWARE\ANGULAR + ASP NET CORE\Tickets Support App\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\runtimes\win\native\mongocrypt.dll
+E:\DESARROLLOS DE SOFTWARE\ANGULAR + ASP NET CORE\Tickets Support App\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\WEB API TICKETS SUPPORT.csprojAssemblyReference.cache
+E:\DESARROLLOS DE SOFTWARE\ANGULAR + ASP NET CORE\Tickets Support App\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\WEB API TICKETS SUPPORT.AssemblyInfoInputs.cache
+E:\DESARROLLOS DE SOFTWARE\ANGULAR + ASP NET CORE\Tickets Support App\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\WEB API TICKETS SUPPORT.AssemblyInfo.cs
+E:\DESARROLLOS DE SOFTWARE\ANGULAR + ASP NET CORE\Tickets Support App\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\WEB API TICKETS SUPPORT.csproj.CoreCompileInputs.cache
+E:\DESARROLLOS DE SOFTWARE\ANGULAR + ASP NET CORE\Tickets Support App\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\WEB API TICKETS SUPPORT.MvcApplicationPartsAssemblyInfo.cache
+E:\DESARROLLOS DE SOFTWARE\ANGULAR + ASP NET CORE\Tickets Support App\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\WEB API TICKETS SUPPORT.RazorTargetAssemblyInfo.cache
+E:\DESARROLLOS DE SOFTWARE\ANGULAR + ASP NET CORE\Tickets Support App\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\WEB API TICKETS SUPPORT.csproj.CopyComplete
+E:\DESARROLLOS DE SOFTWARE\ANGULAR + ASP NET CORE\Tickets Support App\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\staticwebassets\WEB API TICKETS SUPPORT.StaticWebAssets.Manifest.cache
+E:\DESARROLLOS DE SOFTWARE\ANGULAR + ASP NET CORE\Tickets Support App\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\staticwebassets\WEB API TICKETS SUPPORT.StaticWebAssets.xml
+E:\DESARROLLOS DE SOFTWARE\ANGULAR + ASP NET CORE\Tickets Support App\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\WEB API TICKETS SUPPORT.dll
+E:\DESARROLLOS DE SOFTWARE\ANGULAR + ASP NET CORE\Tickets Support App\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\WEB API TICKETS SUPPORT.pdb
+E:\DESARROLLOS DE SOFTWARE\ANGULAR + ASP NET CORE\Tickets Support App\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\WEB API TICKETS SUPPORT.genruntimeconfig.cache

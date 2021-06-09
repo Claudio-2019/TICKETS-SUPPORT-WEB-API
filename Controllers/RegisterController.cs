@@ -27,20 +27,20 @@ namespace WEB_API_TICKETS_SUPPORT.Controllers
 
                 return Ok("Se ha registrado el Usuario: " + user.Name);
             }
-            else if (User != null && user.Role == "Admin")
+            else if (User != null && user.Role == "Approve")
             {
-                UserAdminRegisterModel AdminData = new UserAdminRegisterModel()
+                CurrentRegistrationModel UserData = new CurrentRegistrationModel()
                 {
                     Name = user.Name,
                     LastName = user.LastName,
                     Phone = user.Phone,
                     Email = user.Email,
                     Pass = user.Pass,
-                    Role = user.Role
+                    Role = "User"
                 };
-                await RegisterUserService.CreateAdminAccount(AdminData);
+                await systemRegister.ApproveUser(UserData);
 
-                return Ok("Se ha registrado el Usuario: " + AdminData.Name + "como administrador del sistema");
+                return Ok("Se ha registrado el cliente: " + UserData.Name + "como usuario del sistema");
             }
             else
             {
