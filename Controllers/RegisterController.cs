@@ -40,6 +40,8 @@ namespace WEB_API_TICKETS_SUPPORT.Controllers
                 };
                 await systemRegister.ApproveUser(UserData);
 
+                await systemRegister.RejectUser(user._id);
+
                 return Ok("Se ha registrado el cliente: " + UserData.Name + "como usuario del sistema");
             }
             else
@@ -48,11 +50,24 @@ namespace WEB_API_TICKETS_SUPPORT.Controllers
             }
 
         }
-
         [HttpGet]
         public async Task<IActionResult> GetRegistrations()
         {
             return Ok(await systemRegister.GetCurrentRegistrations());
+        }
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteSuscription(string id)
+        {
+            if (id.Equals(""))
+            {
+                return BadRequest("ocurrio un error al ingresar el id");
+            }
+            else
+            {
+                await systemRegister.RejectUser(id);
+
+                return Ok("Se la eliminado la suscripcion del cliente: " + id + " de la base de datos!");
+            }
         }
     }
 }
