@@ -232,7 +232,6 @@ D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\w
 D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\win-x86\hostfxr.dll
 D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\win-x86\hostpolicy.dll
 D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\win-x86\mscordaccore.dll
-D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\win-x86\mscordaccore_x86_x86_4.700.21.21202.dll
 D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\win-x86\mscordbi.dll
 D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\win-x86\mscorrc.debug.dll
 D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\win-x86\mscorrc.dll
@@ -765,3 +764,4 @@ E:\DESARROLLOS DE SOFTWARE\ANGULAR + ASP NET CORE\Tickets Support App\TICKETS-SU
 E:\DESARROLLOS DE SOFTWARE\ANGULAR + ASP NET CORE\Tickets Support App\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\win-x86\WEB API TICKETS SUPPORT.dll
 E:\DESARROLLOS DE SOFTWARE\ANGULAR + ASP NET CORE\Tickets Support App\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\win-x86\WEB API TICKETS SUPPORT.pdb
 E:\DESARROLLOS DE SOFTWARE\ANGULAR + ASP NET CORE\Tickets Support App\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\win-x86\WEB API TICKETS SUPPORT.genruntimeconfig.cache
+D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\win-x86\mscordaccore_x86_x86_4.700.21.26205.dll

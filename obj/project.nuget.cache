@@ -1,20 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "cGwKaDXSkQJngwPuHXvP+XEKXcOx/s0fdTiBBKPsaajculKqcMrwbBloguqcSS9qeuNX6Y/CcqpwQKyi03Yh9A==",
+  "dgSpecHash": "eQkshzg4F1dh1kwPJbWvbYUvZvTpqEnAktVWwu4AKDL5mDm98BXJ2EWRFxRIJKJK6VuHXBBBUa0+seOKOrNDMA==",
   "success": true,
-  "projectFilePath": "E:\\DESARROLLOS DE SOFTWARE\\ANGULAR + ASP NET CORE\\Tickets Support App\\TICKETS-SUPPORT-WEB-API\\WEB API TICKETS SUPPORT.csproj",
+  "projectFilePath": "D:\\App de Tickets de Soporte\\TICKETS-SUPPORT-WEB-API\\WEB API TICKETS SUPPORT.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Escuela Marian Baker\\.nuget\\packages\\dnsclient\\1.4.0\\dnsclient.1.4.0.nupkg.sha512",
-    "C:\\Users\\Escuela Marian Baker\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",
-    "C:\\Users\\Escuela Marian Baker\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.13\\microsoft.visualstudio.azure.containers.tools.targets.1.10.13.nupkg.sha512",
-    "C:\\Users\\Escuela Marian Baker\\.nuget\\packages\\mongodb.bson\\2.12.2\\mongodb.bson.2.12.2.nupkg.sha512",
-    "C:\\Users\\Escuela Marian Baker\\.nuget\\packages\\mongodb.driver\\2.12.2\\mongodb.driver.2.12.2.nupkg.sha512",
-    "C:\\Users\\Escuela Marian Baker\\.nuget\\packages\\mongodb.driver.core\\2.12.2\\mongodb.driver.core.2.12.2.nupkg.sha512",
-    "C:\\Users\\Escuela Marian Baker\\.nuget\\packages\\mongodb.libmongocrypt\\1.2.1\\mongodb.libmongocrypt.1.2.1.nupkg.sha512",
-    "C:\\Users\\Escuela Marian Baker\\.nuget\\packages\\sharpcompress\\0.23.0\\sharpcompress.0.23.0.nupkg.sha512",
-    "C:\\Users\\Escuela Marian Baker\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
-    "C:\\Users\\Escuela Marian Baker\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
-    "C:\\Users\\Escuela Marian Baker\\.nuget\\packages\\system.text.encoding.codepages\\4.5.1\\system.text.encoding.codepages.4.5.1.nupkg.sha512"
+    "C:\\Users\\Soporte TI MBS\\.nuget\\packages\\dnsclient\\1.4.0\\dnsclient.1.4.0.nupkg.sha512",
+    "C:\\Users\\Soporte TI MBS\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",
+    "C:\\Users\\Soporte TI MBS\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.13\\microsoft.visualstudio.azure.containers.tools.targets.1.10.13.nupkg.sha512",
+    "C:\\Users\\Soporte TI MBS\\.nuget\\packages\\mongodb.bson\\2.12.2\\mongodb.bson.2.12.2.nupkg.sha512",
+    "C:\\Users\\Soporte TI MBS\\.nuget\\packages\\mongodb.driver\\2.12.2\\mongodb.driver.2.12.2.nupkg.sha512",
+    "C:\\Users\\Soporte TI MBS\\.nuget\\packages\\mongodb.driver.core\\2.12.2\\mongodb.driver.core.2.12.2.nupkg.sha512",
+    "C:\\Users\\Soporte TI MBS\\.nuget\\packages\\mongodb.libmongocrypt\\1.2.1\\mongodb.libmongocrypt.1.2.1.nupkg.sha512",
+    "C:\\Users\\Soporte TI MBS\\.nuget\\packages\\sharpcompress\\0.23.0\\sharpcompress.0.23.0.nupkg.sha512",
+    "C:\\Users\\Soporte TI MBS\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\Soporte TI MBS\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+    "C:\\Users\\Soporte TI MBS\\.nuget\\packages\\system.text.encoding.codepages\\4.5.1\\system.text.encoding.codepages.4.5.1.nupkg.sha512"
   ],
   "logs": []
 }

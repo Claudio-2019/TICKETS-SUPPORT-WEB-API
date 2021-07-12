@@ -67,5 +67,36 @@ namespace WEB_API_TICKETS_SUPPORT.Controllers
                 return Ok("EL EQUIPO: "+item.Tag+" FUE INSERTADO EN LA BASE DE DATOS");
             }
         }
+        [HttpPut]
+        public async Task<IActionResult> UpdatedUItem([FromBody] InventoryItemModel item) {
+
+            if (item == null)
+            {
+                return NoContent();
+            }
+            else
+            {
+                await inventoryServices.UpdateItemFromInventory(item.Category, item);
+
+                return Ok("EL EQUIPO: "+ item.Code+ "HA SIDO ACTUALIZADO");
+            }
+            
+            
+        }
+        [HttpPost]
+        [Route("api/Inventory/DeleteItemInventory")]
+        public async Task<IActionResult> DeleteItemInventory([FromBody] string id, string category)
+        {
+            if (id.Equals("") || category.Equals(""))
+            {
+                return BadRequest("ocurrio un error al ingresar el id o category");
+            }
+            else
+            {
+                await inventoryServices.DeleteItemFromInventory(id,category);
+
+                return Ok("Se ha eliminado el item: " + id + " de la base de datos de inventario de: "+category);
+            }
+        }
     }
 }

@@ -685,23 +685,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Escuela Marian Baker\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Soporte TI MBS\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\DESARROLLOS DE SOFTWARE\\ANGULAR + ASP NET CORE\\Tickets Support App\\TICKETS-SUPPORT-WEB-API\\WEB API TICKETS SUPPORT.csproj",
+      "projectUniqueName": "D:\\App de Tickets de Soporte\\TICKETS-SUPPORT-WEB-API\\WEB API TICKETS SUPPORT.csproj",
       "projectName": "WEB API TICKETS SUPPORT",
-      "projectPath": "E:\\DESARROLLOS DE SOFTWARE\\ANGULAR + ASP NET CORE\\Tickets Support App\\TICKETS-SUPPORT-WEB-API\\WEB API TICKETS SUPPORT.csproj",
-      "packagesPath": "C:\\Users\\Escuela Marian Baker\\.nuget\\packages\\",
-      "outputPath": "E:\\DESARROLLOS DE SOFTWARE\\ANGULAR + ASP NET CORE\\Tickets Support App\\TICKETS-SUPPORT-WEB-API\\obj\\publish\\win-x86\\",
+      "projectPath": "D:\\App de Tickets de Soporte\\TICKETS-SUPPORT-WEB-API\\WEB API TICKETS SUPPORT.csproj",
+      "packagesPath": "C:\\Users\\Soporte TI MBS\\.nuget\\packages\\",
+      "outputPath": "D:\\App de Tickets de Soporte\\TICKETS-SUPPORT-WEB-API\\obj\\publish\\win-x86\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Escuela Marian Baker\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Soporte TI MBS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -714,6 +717,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -725,6 +729,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
             "target": "Package",
@@ -748,15 +753,15 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Runtime.win-x86",
-            "version": "[3.1.5, 3.1.5]"
+            "version": "[3.1.16, 3.1.16]"
           },
           {
             "name": "Microsoft.NETCore.App.Runtime.win-x86",
-            "version": "[3.1.5, 3.1.5]"
+            "version": "[3.1.16, 3.1.16]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Runtime.win-x86",
-            "version": "[3.1.5, 3.1.5]"
+            "version": "[3.1.16, 3.1.16]"
           }
         ],
         "frameworkReferences": {
@@ -767,7 +772,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

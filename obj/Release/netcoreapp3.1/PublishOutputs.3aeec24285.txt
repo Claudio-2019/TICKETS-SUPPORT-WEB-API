@@ -1,0 +1,20 @@
+D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\PubTmp\Out\WEB API TICKETS SUPPORT.exe
+D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.Development.json
+D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.json
+D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\PubTmp\Out\WEB API TICKETS SUPPORT.dll
+D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\PubTmp\Out\WEB API TICKETS SUPPORT.deps.json
+D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\PubTmp\Out\WEB API TICKETS SUPPORT.runtimeconfig.json
+D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\PubTmp\Out\WEB API TICKETS SUPPORT.pdb
+D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\PubTmp\Out\DnsClient.dll
+D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\PubTmp\Out\MongoDB.Bson.dll
+D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\PubTmp\Out\MongoDB.Driver.dll
+D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\PubTmp\Out\MongoDB.Driver.Core.dll
+D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\PubTmp\Out\MongoDB.Libmongocrypt.dll
+D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\PubTmp\Out\SharpCompress.dll
+D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\PubTmp\Out\System.Runtime.CompilerServices.Unsafe.dll
+D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\PubTmp\Out\runtimes\win\native\libzstd.dll
+D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\PubTmp\Out\runtimes\win\native\snappy32.dll
+D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\PubTmp\Out\runtimes\win\native\snappy64.dll
+D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\PubTmp\Out\runtimes\linux\native\libmongocrypt.so
+D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\PubTmp\Out\runtimes\osx\native\libmongocrypt.dylib
+D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\PubTmp\Out\runtimes\win\native\mongocrypt.dll

@@ -11,8 +11,8 @@ namespace WEB_API_TICKETS_SUPPORT.Interfaces
         Task InsertItemToInventory(InventoryItemModel item);
         Task<List<InventoryItemModel>> GetInventorySelected(string category);
         Task<List<InventoryItemModel>> GetInventoryComputers();
-        Task DeleteItemFromInventory(string _id);
-        Task UpdateItemFromInventory(InventoryItemModel update);
+        Task DeleteItemFromInventory(string _id,string category);
+        Task UpdateItemFromInventory(string id,InventoryItemModel update);
 
     }
 }

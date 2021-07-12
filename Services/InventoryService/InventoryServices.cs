@@ -88,15 +88,53 @@ namespace WEB_API_TICKETS_SUPPORT.Services.InventoryService
 
 
         }
-
-        public Task DeleteItemFromInventory(string _id)
+        public Task DeleteItemFromInventory(string _id,string SelectedCategory)
         {
-            throw new NotImplementedException();
+            var FiltroConsulta = Builders<InventoryItemModel>.Filter.Eq(X => X._id, _id);
+
+            switch (SelectedCategory)
+            {
+                case "COMPUTERS":
+                    return CollectionInventoryComputers.DeleteOneAsync(FiltroConsulta);
+                case "NETWORK DEVICES":
+                    return CollectionInventoryNetworkDevices.DeleteOneAsync(FiltroConsulta);
+                case "SECURITY CAMERAS":
+                    return CollectionInventorySecurityCameras.DeleteOneAsync(FiltroConsulta);
+                case "SOUND EQUIPMENT":
+                    return CollectionInventorySoundEquipment.DeleteOneAsync(FiltroConsulta);
+                case "PROYECTION AND MULTIMEDIA DEVICES":
+                    return CollectionInventoryMultimedia.DeleteOneAsync(FiltroConsulta);
+                case "TABLETS OR IPADS":
+                    return CollectionInventoryTabletsIpads.DeleteOneAsync(FiltroConsulta);
+                case "SOFTWARE UTILITIES":
+                    return CollectionInventorySoftwareUtilities.DeleteOneAsync(FiltroConsulta);
+                default:
+                    return null;
+            }
         }
-
-        public Task UpdateItemFromInventory(InventoryItemModel update)
+        public Task UpdateItemFromInventory(string category, InventoryItemModel update)
         {
-            throw new NotImplementedException();
+            var FiltroConsulta = Builders<InventoryItemModel>.Filter.Eq(X => X._id, update._id);
+
+            switch (category)
+            {
+                case "COMPUTERS":
+                      return CollectionInventoryComputers.ReplaceOneAsync(FiltroConsulta, update);
+                case "NETWORK DEVICES":
+                    return CollectionInventoryNetworkDevices.ReplaceOneAsync(FiltroConsulta, update);
+                case "SECURITY CAMERAS":
+                    return CollectionInventorySecurityCameras.ReplaceOneAsync(FiltroConsulta, update);
+                case "SOUND EQUIPMENT":
+                    return CollectionInventorySoundEquipment.ReplaceOneAsync(FiltroConsulta, update);
+                case "PROYECTION AND MULTIMEDIA DEVICES":
+                    return CollectionInventoryMultimedia.ReplaceOneAsync(FiltroConsulta, update);
+                case "TABLETS OR IPADS":
+                    return CollectionInventoryTabletsIpads.ReplaceOneAsync(FiltroConsulta, update);
+                case "SOFTWARE UTILITIES":
+                    return CollectionInventorySoftwareUtilities.ReplaceOneAsync(FiltroConsulta, update);
+                default:
+                    return null;
+            }
         }
 
         public async Task<List<InventoryItemModel>> GetInventoryComputers()
