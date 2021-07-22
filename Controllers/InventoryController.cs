@@ -84,18 +84,18 @@ namespace WEB_API_TICKETS_SUPPORT.Controllers
             
         }
         [HttpPost]
-        [Route("api/Inventory/DeleteItemInventory")]
-        public async Task<IActionResult> DeleteItemInventory([FromBody] string id, string category)
+        [Route("DeleteItemInventory")]
+        public async Task<IActionResult> DeleteItemInventory([FromBody] InventoryItemModel item)
         {
-            if (id.Equals("") || category.Equals(""))
+            if (item.Equals("") || item.Category.Equals(""))
             {
                 return BadRequest("ocurrio un error al ingresar el id o category");
             }
             else
             {
-                await inventoryServices.DeleteItemFromInventory(id,category);
+                await inventoryServices.DeleteItemFromInventory(item._id, item.Category);
 
-                return Ok("Se ha eliminado el item: " + id + " de la base de datos de inventario de: "+category);
+                return Ok("Se ha eliminado el item: " + item._id + " de la base de datos de inventario de: "+ item.Category);
             }
         }
     }

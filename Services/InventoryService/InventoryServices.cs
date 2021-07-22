@@ -112,29 +112,40 @@ namespace WEB_API_TICKETS_SUPPORT.Services.InventoryService
                     return null;
             }
         }
-        public Task UpdateItemFromInventory(string category, InventoryItemModel update)
+        public async Task UpdateItemFromInventory(string category, InventoryItemModel update)
         {
             var FiltroConsulta = Builders<InventoryItemModel>.Filter.Eq(X => X._id, update._id);
 
-            switch (category)
+            if (category.Equals("COMPUTERS"))
             {
-                case "COMPUTERS":
-                      return CollectionInventoryComputers.ReplaceOneAsync(FiltroConsulta, update);
-                case "NETWORK DEVICES":
-                    return CollectionInventoryNetworkDevices.ReplaceOneAsync(FiltroConsulta, update);
-                case "SECURITY CAMERAS":
-                    return CollectionInventorySecurityCameras.ReplaceOneAsync(FiltroConsulta, update);
-                case "SOUND EQUIPMENT":
-                    return CollectionInventorySoundEquipment.ReplaceOneAsync(FiltroConsulta, update);
-                case "PROYECTION AND MULTIMEDIA DEVICES":
-                    return CollectionInventoryMultimedia.ReplaceOneAsync(FiltroConsulta, update);
-                case "TABLETS OR IPADS":
-                    return CollectionInventoryTabletsIpads.ReplaceOneAsync(FiltroConsulta, update);
-                case "SOFTWARE UTILITIES":
-                    return CollectionInventorySoftwareUtilities.ReplaceOneAsync(FiltroConsulta, update);
-                default:
-                    return null;
+                await CollectionInventoryComputers.ReplaceOneAsync(FiltroConsulta, update);
             }
+            else if(category.Equals("NETWORK DEVICES"))
+            {
+                 await CollectionInventoryNetworkDevices.ReplaceOneAsync(FiltroConsulta, update);
+            }
+            else if (category.Equals("SOUND EQUIPMENT"))
+            {
+                 await CollectionInventorySoundEquipment.ReplaceOneAsync(FiltroConsulta, update);
+            }
+            else if (category.Equals("SECURITY CAMERAS"))
+            {
+                await CollectionInventorySecurityCameras.ReplaceOneAsync(FiltroConsulta, update);
+            }
+            else if (category.Equals("PROYECTION AND MULTIMEDIA DEVICES"))
+            {
+                await CollectionInventoryMultimedia.ReplaceOneAsync(FiltroConsulta, update);
+            }
+            else if (category.Equals("TABLETS OR IPADS"))
+            {
+                await CollectionInventoryTabletsIpads.ReplaceOneAsync(FiltroConsulta, update);
+            }
+            else if (category.Equals("SOFTWARE UTILITIES"))
+            {
+                await CollectionInventorySoftwareUtilities.ReplaceOneAsync(FiltroConsulta, update);
+            }
+
+           
         }
 
         public async Task<List<InventoryItemModel>> GetInventoryComputers()

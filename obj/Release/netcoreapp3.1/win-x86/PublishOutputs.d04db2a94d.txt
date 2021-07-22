@@ -220,7 +220,7 @@ D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\w
 D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\win-x86\PubTmp\Out\hostfxr.dll
 D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\win-x86\PubTmp\Out\hostpolicy.dll
 D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\win-x86\PubTmp\Out\mscordaccore.dll
-D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\win-x86\PubTmp\Out\mscordaccore_x86_x86_4.700.21.26205.dll
+D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\win-x86\PubTmp\Out\mscordaccore_x86_x86_4.700.21.31506.dll
 D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\win-x86\PubTmp\Out\mscordbi.dll
 D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\win-x86\PubTmp\Out\mscorrc.debug.dll
 D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\win-x86\PubTmp\Out\mscorrc.dll
