@@ -21,5 +21,7 @@ namespace WEB_API_TICKETS_SUPPORT.Models
         public string Details { get; set; }
         [BsonElement]
         public string SolutionDetails { get; set; }
+        [BsonElement]
+        public string? EmailToNotifitication { get; set; }
     }
 }

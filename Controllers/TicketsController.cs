@@ -24,7 +24,7 @@ namespace WEB_API_TICKETS_SUPPORT.Controllers
             {
                 await TicketsService.CreateTicket(ticket);
 
-                return Ok("SE HA GENERADO EL TICKET: " + ticket.TicketNumber + " SERA ATENDIDO EN LA PRO NTO POSIBLE DEPENDIENDO DE LA COLA DE TICKETS");
+                return Ok("SE HA GENERADO EL TICKET: " + ticket.TicketNumber + "SERA ATENDIDO EN LO MAS PRONTO POSIBLE DEPENDIENDO DE LA COLA DE TICKETS");
             }
             else if (ticket.Name == "" || ticket.Email == "" || ticket.Details == "")
             {
