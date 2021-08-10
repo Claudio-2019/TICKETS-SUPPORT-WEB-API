@@ -999,7 +999,6 @@ C:\Users\ClaudioPC\Desktop\Desarollo de software\WEB\ASP NET CORE + ANGULAR\Tick
 C:\Users\ClaudioPC\Desktop\Desarollo de software\WEB\ASP NET CORE + ANGULAR\Tickets Support App\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\win-x86\hostfxr.dll
 C:\Users\ClaudioPC\Desktop\Desarollo de software\WEB\ASP NET CORE + ANGULAR\Tickets Support App\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\win-x86\hostpolicy.dll
 C:\Users\ClaudioPC\Desktop\Desarollo de software\WEB\ASP NET CORE + ANGULAR\Tickets Support App\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\win-x86\mscordaccore.dll
-C:\Users\ClaudioPC\Desktop\Desarollo de software\WEB\ASP NET CORE + ANGULAR\Tickets Support App\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\win-x86\mscordaccore_x86_x86_4.700.21.31506.dll
 C:\Users\ClaudioPC\Desktop\Desarollo de software\WEB\ASP NET CORE + ANGULAR\Tickets Support App\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\win-x86\mscordbi.dll
 C:\Users\ClaudioPC\Desktop\Desarollo de software\WEB\ASP NET CORE + ANGULAR\Tickets Support App\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\win-x86\mscorrc.debug.dll
 C:\Users\ClaudioPC\Desktop\Desarollo de software\WEB\ASP NET CORE + ANGULAR\Tickets Support App\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\win-x86\mscorrc.dll
@@ -1148,3 +1147,4 @@ C:\Users\ClaudioPC\Desktop\Desarollo de software\WEB\ASP NET CORE + ANGULAR\Tick
 C:\Users\ClaudioPC\Desktop\Desarollo de software\WEB\ASP NET CORE + ANGULAR\Tickets Support App\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\win-x86\WEB API TICKETS SUPPORT.dll
 C:\Users\ClaudioPC\Desktop\Desarollo de software\WEB\ASP NET CORE + ANGULAR\Tickets Support App\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\win-x86\WEB API TICKETS SUPPORT.pdb
 C:\Users\ClaudioPC\Desktop\Desarollo de software\WEB\ASP NET CORE + ANGULAR\Tickets Support App\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\win-x86\WEB API TICKETS SUPPORT.genruntimeconfig.cache
+C:\Users\ClaudioPC\Desktop\Desarollo de software\WEB\ASP NET CORE + ANGULAR\Tickets Support App\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\win-x86\mscordaccore_x86_x86_4.700.21.21202.dll
