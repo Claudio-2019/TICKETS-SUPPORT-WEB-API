@@ -30,104 +30,107 @@ namespace WEB_API_TICKETS_SUPPORT.Services.LogsTickets
         {
             await CollectionLogsTickets.InsertOneAsync(newLogTicket);
 
-    //        await Task.Run(() =>
-    //        {
+            await Task.Run(() =>
+            {
 
-    //            MailMessage notificacion = new MailMessage();
-    //            SmtpClient servicioSMTP = new SmtpClient();
-    //            notificacion.From = new MailAddress("cgonzalez@mbs.ed.cr", "TICKET STATUS");
-    //            notificacion.To.Add(new MailAddress(newLogTicket.EmailToNotifitication));
-    //            notificacion.Subject = "THE TICKET " + newLogTicket.TicketNumber + "HAS BEEN CLOSED BY THE ADMINISTRATOR";
-    //            notificacion.IsBodyHtml = true;
+                MailMessage notificacion = new MailMessage();
+                SmtpClient servicioSMTP = new SmtpClient();
+                notificacion.From = new MailAddress("cgonzalez@mbs.ed.cr", "CURRENT TICKET STATUS");
+                notificacion.To.Add(new MailAddress(newLogTicket.EmailToNotifitication));
+                notificacion.Subject = "THE TICKET " + newLogTicket.TicketNumber + "HAS BEEN CLOSED BY THE ADMINISTRATOR";
+                notificacion.IsBodyHtml = true;
 
-    //            notificacion.Body =
-    //            "< body >"+
-    //"< div style = 'border-style: solid; border-color: black;' >"+
+                notificacion.Body = 
 
+    "< style >"+
+        "#MessageContainer {+"+
+            "border - style: solid;"+
+                "border - color: black;"+
 
-    //     "< div style = 'margin-left: 0.5cm;' >"+
+            "}"+
 
+        "#ContainerSolution {"+
+            "margin - left: 50px;"+
+            "margin - right: 50px;"+
+        "}"+
 
-    //          "< h3 > YOUR TICKET HAS BEEN RESOLVED</ h3 >"+
+        "hr {"+
+            "color: black;"+
+        "}"+
 
+    "table {"+
+            "width: 100%;"+
+            "border: 1px solid black;"+
+            "border-color: black;"+
+            "border-style: solid;"+
+            "border-collapse: collapse;"+
+        "}"+
 
-    //         </ div >+
+"td"+
+"{"+
+    "text - align: center;"+
+"border: 1px solid black;"+
+"}"+
 
+"h2"+
+"{"+
+    "margin - left: 20px;"+
+"}"+
+".button {"+
+            "display: block;"+
+            "width: 500px;"+
+            "height: 25px;"+
+            "background: #29b330;"+
+            "padding: 10px;"+
+            "text - align: center;"+
+            "border - radius: 5px;"+
+            "color: white;"+
+            "font - weight: bold;"+
+            "line - height: 25px;"+
+            "}"+
+"}"+
+    "</ style >"+
 
-    //         < hr >+
+        "< div id=MessageContainer>"+
+ 
 
+         "<h2> THIS TICKET "+newLogTicket.TicketNumber+" HAS BEEN CLOSED FOR: "+newLogTicket.Name+"</h2>"+
+        "<hr>"+
 
-    //         < div style = "margin-left: 0.5cm; width: 100%;" >+
+        "<div id=ContainerSolution>"+
 
+            "<table>"+
 
-    //              < style >
-    //                  table,
-    //            th,
-    //            td {
-    //            border: 1px solid black;
-    //                border - collapse: collapse;
-    //            }
+                "<thead>"+
+                    "<tr>"+
+                        "<th>TYPE OF SUPPORT</th>"+
+                        "<th>DETAILS ABOUT THE PROBLEM</th>"+
+                        "<th>SOLUTION REGISTERED</th>"+
+                    "</tr>"+
+                "</thead>"+
+                "<tbody>"+
+                    "<tr>"+
+                        "<td>"+newLogTicket.TypeRequest+"</td>"+
+                        "<td>+"+newLogTicket.Details+"</td>"+
+                        "<td>"+newLogTicket.SolutionDetails+"</td>"+
+                    "</tr>"+
+                "</tbody>"+
 
-    //            td {
-    //                text - align: center;
-    //            }
-    //        </ style >+
-    //        < table >+
-    //            < thead >+
-    //                < th ># Ticket</th>+
-    //                < th > Tipo de problema</ th >+
+           "</table>"+
+        "</div>"+
+        "<hr>"+
+       " <a class='button' target='blank'"+ "href='https://ticketsmbssupport.netlify.app'>"+"IF YOU WANT TO SEND A NEW TICKET, CLICK HERE </ a > "+
+    "</div>";
 
-                
-    //                   < th > Detalles de solucion</ th >+
+                servicioSMTP.Port = 587;
+                servicioSMTP.Host = "smtp.gmail.com";
+                servicioSMTP.EnableSsl = true;
+                servicioSMTP.UseDefaultCredentials = false;
+                servicioSMTP.Credentials = new NetworkCredential("cgonzalez@mbs.ed.cr", "IT.s0p0rt3.MBS1");
+                servicioSMTP.DeliveryMethod = SmtpDeliveryMethod.Network;
+                servicioSMTP.Send(notificacion);
 
-
-
-    //                  </ thead >+
-
-
-    //                  < tbody >+
-
-
-    //                      < tr >+
-
-
-    //                          < td > test </ td >
-
-
-    //                          < td > test </ td >
-
-
-    //                          < td > test </ td >
-
-
-    //                      </ tr >
-
-
-
-    //                  </ tbody >
-
-
-    //              </ table >
-
-
-    //          </ div >
-
-
-    //          < br >
-
-
-    //      </ div >
-    //  </ body >
-
-    //                  servicioSMTP.Port = 587;
-    //            servicioSMTP.Host = "smtp.gmail.com";
-    //            servicioSMTP.EnableSsl = true;
-    //            servicioSMTP.UseDefaultCredentials = false;
-    //            servicioSMTP.Credentials = new NetworkCredential("cgonzalez@mbs.ed.cr", "IT.s0p0rt3.MBS1");
-    //            servicioSMTP.DeliveryMethod = SmtpDeliveryMethod.Network;
-    //            servicioSMTP.Send(notificacion);
-
-    //        });
+            });
         }
 
         public async Task<List<LogTicketModel>> GetCurrentTicketsLogs()

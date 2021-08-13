@@ -367,16 +367,13 @@ D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\w
 D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\win-x86\System.Security.Permissions.dll
 D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\win-x86\System.Windows.Extensions.dll
 D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\bin\Release\netcoreapp3.1\win-x86\aspnetcorev2_inprocess.dll
-D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\win-x86\WEB API TICKETS SUPPORT.csprojAssemblyReference.cache
 D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\win-x86\WEB API TICKETS SUPPORT.AssemblyInfoInputs.cache
 D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\win-x86\WEB API TICKETS SUPPORT.AssemblyInfo.cs
 D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\win-x86\WEB API TICKETS SUPPORT.csproj.CoreCompileInputs.cache
 D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\win-x86\WEB API TICKETS SUPPORT.MvcApplicationPartsAssemblyInfo.cache
 D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\win-x86\staticwebassets\WEB API TICKETS SUPPORT.StaticWebAssets.Manifest.cache
-D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\win-x86\staticwebassets\WEB API TICKETS SUPPORT.StaticWebAssets.xml
 D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\win-x86\scopedcss\bundle\WEB API TICKETS SUPPORT.styles.css
 D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\win-x86\WEB API TICKETS SUPPORT.RazorTargetAssemblyInfo.cache
-D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\win-x86\WEB API TICKETS SUPPORT.csproj.CopyComplete
 D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\win-x86\WEB API TICKETS SUPPORT.dll
 D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\win-x86\WEB API TICKETS SUPPORT.pdb
 D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\win-x86\WEB API TICKETS SUPPORT.genruntimeconfig.cache
@@ -1148,3 +1145,5 @@ C:\Users\ClaudioPC\Desktop\Desarollo de software\WEB\ASP NET CORE + ANGULAR\Tick
 C:\Users\ClaudioPC\Desktop\Desarollo de software\WEB\ASP NET CORE + ANGULAR\Tickets Support App\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\win-x86\WEB API TICKETS SUPPORT.dll
 C:\Users\ClaudioPC\Desktop\Desarollo de software\WEB\ASP NET CORE + ANGULAR\Tickets Support App\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\win-x86\WEB API TICKETS SUPPORT.pdb
 C:\Users\ClaudioPC\Desktop\Desarollo de software\WEB\ASP NET CORE + ANGULAR\Tickets Support App\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\win-x86\WEB API TICKETS SUPPORT.genruntimeconfig.cache
+D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\win-x86\WEB API TICKETS SUPPORT.csproj.AssemblyReference.cache
+D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\win-x86\WEB API TICKETS SUPPORT.GeneratedMSBuildEditorConfig.editorconfig
