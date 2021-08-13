@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "S5Bxk4W+B/QQ3BuxjIbpDVWB4zCT4/Jr8vUDozYhkveGGmJMXyZg5ByRErvZZrwtp/Vwv+j1dL/Lp+vuBRuPKg==",
+=======
+  "dgSpecHash": "l0S8eSj98Ql7nvfP/r28TUMtwK+Wp8bA65Krqgr5Cd1pvpoY59YhP5b44z0tksORPj+fBLiERIuh9YAJOwIVEQ==",
+>>>>>>> 124f1610bf58719762c43c62886dd9db490806a3
   "success": true,
   "projectFilePath": "D:\\App de Tickets de Soporte\\TICKETS-SUPPORT-WEB-API\\WEB API TICKETS SUPPORT.csproj",
   "expectedPackageFiles": [
