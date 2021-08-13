@@ -70,8 +70,8 @@ namespace WEB_API_TICKETS_SUPPORT.Controllers
             return Ok(await TicketsService.GetCurrentTickets());
         }
 
-        [HttpDelete]
-        public async Task<IActionResult> DeleteTicket([FromBody] TicketRequestModel id)
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteTicket(string id)
         {
             if (id.Equals(""))
             {
@@ -79,10 +79,10 @@ namespace WEB_API_TICKETS_SUPPORT.Controllers
             }
             else
             {
-                await TicketsService.DeleteTicket(id._id);
+                await TicketsService.DeleteTicket(id);
 
 
-                return Ok("EL TICKET: " + id.TicketNumber + " HA SIDO COMPLETADO!");
+                return Ok("EL TICKET: " + id + " HA SIDO COMPLETADO!");
             }
         }
         [HttpPut]

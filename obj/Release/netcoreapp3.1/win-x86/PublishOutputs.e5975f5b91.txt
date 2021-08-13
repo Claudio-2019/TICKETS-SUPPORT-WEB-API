@@ -220,7 +220,7 @@ C:\Users\ClaudioPC\Desktop\Desarollo de software\WEB\ASP NET CORE + ANGULAR\Tick
 C:\Users\ClaudioPC\Desktop\Desarollo de software\WEB\ASP NET CORE + ANGULAR\Tickets Support App\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\win-x86\PubTmp\Out\hostfxr.dll
 C:\Users\ClaudioPC\Desktop\Desarollo de software\WEB\ASP NET CORE + ANGULAR\Tickets Support App\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\win-x86\PubTmp\Out\hostpolicy.dll
 C:\Users\ClaudioPC\Desktop\Desarollo de software\WEB\ASP NET CORE + ANGULAR\Tickets Support App\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\win-x86\PubTmp\Out\mscordaccore.dll
-C:\Users\ClaudioPC\Desktop\Desarollo de software\WEB\ASP NET CORE + ANGULAR\Tickets Support App\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\win-x86\PubTmp\Out\mscordaccore_x86_x86_4.700.21.31506.dll
+C:\Users\ClaudioPC\Desktop\Desarollo de software\WEB\ASP NET CORE + ANGULAR\Tickets Support App\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\win-x86\PubTmp\Out\mscordaccore_x86_x86_4.700.21.21202.dll
 C:\Users\ClaudioPC\Desktop\Desarollo de software\WEB\ASP NET CORE + ANGULAR\Tickets Support App\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\win-x86\PubTmp\Out\mscordbi.dll
 C:\Users\ClaudioPC\Desktop\Desarollo de software\WEB\ASP NET CORE + ANGULAR\Tickets Support App\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\win-x86\PubTmp\Out\mscorrc.debug.dll
 C:\Users\ClaudioPC\Desktop\Desarollo de software\WEB\ASP NET CORE + ANGULAR\Tickets Support App\TICKETS-SUPPORT-WEB-API\obj\Release\netcoreapp3.1\win-x86\PubTmp\Out\mscorrc.dll
