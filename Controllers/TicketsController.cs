@@ -49,16 +49,21 @@ namespace WEB_API_TICKETS_SUPPORT.Controllers
             }
             else
             {
-                var FilterTicket = TicketsService.GetUserProfileTickets(Name);
+                await Task.Run(() => {
 
-                foreach (TicketRequestModel item in FilterTicket.Result)
-                {
-                    TicketsFromUser.Add(new TicketRequestModel {
-                        TicketNumber = item.TicketNumber,
-                        TypeRequest = item.TypeRequest,
-                        Details=item.Details});
-                }
+                    var FilterTicket = TicketsService.GetUserProfileTickets(Name);
 
+                    foreach (TicketRequestModel item in FilterTicket.Result)
+                    {
+                        TicketsFromUser.Add(new TicketRequestModel
+                        {
+                            TicketNumber = item.TicketNumber,
+                            TypeRequest = item.TypeRequest,
+                            Details = item.Details
+                        });
+                    }
+
+                });
                 return Ok(TicketsFromUser);
             }
 

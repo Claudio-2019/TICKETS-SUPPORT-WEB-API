@@ -42,64 +42,15 @@ namespace WEB_API_TICKETS_SUPPORT.Services.LogsTickets
 
                 notificacion.Body = 
 
-    "< style >"+
-        "#MessageContainer {+"+
-            "border - style: solid;"+
-                "border - color: black;"+
+        "<div style='border-style: solid;border-color: black;'>" +
 
-            "}"+
 
-        "#ContainerSolution {"+
-            "margin - left: 50px;"+
-            "margin - right: 50px;"+
-        "}"+
+         "<h2 style='margin-left: 20px;'> THIS TICKET " + newLogTicket.TicketNumber+" HAS BEEN CLOSED FOR: "+newLogTicket.Name+"</h2>"+
+        "<hr style='color: black;'>" +
 
-        "hr {"+
-            "color: black;"+
-        "}"+
+        "<div style='margin-left: 50px; margin-right: 50px;'>" +
 
-    "table {"+
-            "width: 100%;"+
-            "border: 1px solid black;"+
-            "border-color: black;"+
-            "border-style: solid;"+
-            "border-collapse: collapse;"+
-        "}"+
-
-"td"+
-"{"+
-    "text - align: center;"+
-"border: 1px solid black;"+
-"}"+
-
-"h2"+
-"{"+
-    "margin - left: 20px;"+
-"}"+
-".button {"+
-            "display: block;"+
-            "width: 500px;"+
-            "height: 25px;"+
-            "background: #29b330;"+
-            "padding: 10px;"+
-            "text - align: center;"+
-            "border - radius: 5px;"+
-            "color: white;"+
-            "font - weight: bold;"+
-            "line - height: 25px;"+
-            "}"+
-"}"+
-    "</ style >"+
-
-        "< div id=MessageContainer>"+
- 
-
-         "<h2> THIS TICKET "+newLogTicket.TicketNumber+" HAS BEEN CLOSED FOR: "+newLogTicket.Name+"</h2>"+
-        "<hr>"+
-
-        "<div id=ContainerSolution>"+
-
-            "<table>"+
+            "<table style='width: 100%;border: 1px solid black;border-color: black;border-style: solid;border-collapse: collapse;'>" +
 
                 "<thead>"+
                     "<tr>"+
@@ -110,16 +61,26 @@ namespace WEB_API_TICKETS_SUPPORT.Services.LogsTickets
                 "</thead>"+
                 "<tbody>"+
                     "<tr>"+
-                        "<td>"+newLogTicket.TypeRequest+"</td>"+
-                        "<td>+"+newLogTicket.Details+"</td>"+
-                        "<td>"+newLogTicket.SolutionDetails+"</td>"+
+                        "<td style='text-align: center; border: 1px solid black;'>" + newLogTicket.TypeRequest+"</td>"+
+                        "<td style='text-align: center; border: 1px solid black;'>+" + newLogTicket.Details+"</td>"+
+                        "<td style='text-align: center; border: 1px solid black;'>"+newLogTicket.SolutionDetails+"</td>"+
                     "</tr>"+
                 "</tbody>"+
 
            "</table>"+
         "</div>"+
         "<hr>"+
-       " <a class='button' target='blank'"+ "href='https://ticketsmbssupport.netlify.app'>"+"IF YOU WANT TO SEND A NEW TICKET, CLICK HERE </ a > "+
+       " <a style='" +
+       "display: block; " +
+       "width: 500px; " +
+       "height: 25px; " +
+       "background: #29b330; " +
+       "padding: 10px; " +
+       "text-align: center; " +
+       "border-radius: 5px; " +
+       "color: white; " +
+       "font-weight: bold; " +
+       "line-height: 25px; ' target='blank'" + "href='https://ticketsmbssupport.netlify.app'>"+"IF YOU WANT TO SEND A NEW TICKET, CLICK HERE </ a > "+
     "</div>";
 
                 servicioSMTP.Port = 587;
