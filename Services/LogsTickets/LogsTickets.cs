@@ -19,7 +19,7 @@ namespace WEB_API_TICKETS_SUPPORT.Services.LogsTickets
 
         private readonly IMongoCollection<LogTicketModel> CollectionLogsTickets;
 
-        private readonly HttpContext ServerFiles;
+     
 
         public LogsTickets()
         {
@@ -45,7 +45,7 @@ namespace WEB_API_TICKETS_SUPPORT.Services.LogsTickets
         "<div style='border-style: solid;border-color: black;'>" +
 
 
-         "<h2 style='margin-left: 20px;'> THIS TICKET " + newLogTicket.TicketNumber+" HAS BEEN CLOSED FOR: "+newLogTicket.Name+"</h2>"+
+         "<h2 style='margin-left: 20px;'> THIS TICKET " + newLogTicket.TicketNumber +" HAS BEEN CLOSED FOR: "+newLogTicket.Name+"</h2>"+
         "<hr style='color: black;'>" +
 
         "<div style='margin-left: 50px; margin-right: 50px;'>" +
