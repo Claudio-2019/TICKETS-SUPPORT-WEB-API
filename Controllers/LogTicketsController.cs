@@ -50,25 +50,7 @@ namespace WEB_API_TICKETS_SUPPORT.Controllers
             return Ok(await LogsTicketsService.GetCurrentTicketsLogs());
         }
 
-        [HttpGet]
-        [Route("DownloadHistoryTickets")]
-        public async Task<IActionResult> DownloadHistoryTickets()
-        {
-            
-            var logs = LogsTicketsService.GetCurrentTicketsLogs().Result.ToList();
-
-            var logsReport = new LogTicketModel { 
-               TicketNumber = logs[0].TicketNumber,
-               Name = logs[1].Name,
-               TypeRequest = logs[2].TypeRequest,
-               Details = logs[3].Details,
-               SolutionDetails = logs[4].SolutionDetails 
-
-            
-            };
-
-            return await _CreatePdfReport.GetPdf("Templates/LogsTickets/LogsTicketsReport.cshtml", logsReport.Details);
-        }
+      
 
     }
 }
