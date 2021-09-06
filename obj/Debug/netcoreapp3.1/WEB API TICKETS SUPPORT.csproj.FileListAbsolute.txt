@@ -335,7 +335,6 @@ D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\bin\Debug\netcoreapp3.1\run
 D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\bin\Debug\netcoreapp3.1\runtimes\linux\native\libmongocrypt.so
 D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\bin\Debug\netcoreapp3.1\runtimes\osx\native\libmongocrypt.dylib
 D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\bin\Debug\netcoreapp3.1\runtimes\win\native\mongocrypt.dll
-D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Debug\netcoreapp3.1\WEB API TICKETS SUPPORT.csproj.AssemblyReference.cache
 D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Debug\netcoreapp3.1\WEB API TICKETS SUPPORT.GeneratedMSBuildEditorConfig.editorconfig
 D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Debug\netcoreapp3.1\WEB API TICKETS SUPPORT.AssemblyInfoInputs.cache
 D:\App de Tickets de Soporte\TICKETS-SUPPORT-WEB-API\obj\Debug\netcoreapp3.1\WEB API TICKETS SUPPORT.AssemblyInfo.cs

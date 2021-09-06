@@ -1,5 +1,4 @@
-﻿
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -49,8 +48,6 @@ namespace WEB_API_TICKETS_SUPPORT.Controllers
         {
             return Ok(await LogsTicketsService.GetCurrentTicketsLogs());
         }
-
       
-
     }
 }
