@@ -9,7 +9,7 @@ using WEB_API_TICKETS_SUPPORT.Models;
 using WEB_API_TICKETS_SUPPORT.Services;
 using WEB_API_TICKETS_SUPPORT.Services.LogsTickets;
 using WEB_API_TICKETS_SUPPORT.Utilities;
-using Wkhtmltopdf.NetCore;
+
 
 namespace WEB_API_TICKETS_SUPPORT.Controllers
 {
@@ -18,9 +18,7 @@ namespace WEB_API_TICKETS_SUPPORT.Controllers
     public class LogTicketsController : ControllerBase
     {
         private LogsTickets LogsTicketsService = new LogsTickets();
-        private ServiceTickets ticketsService = new ServiceTickets();
-
-        readonly IGeneratePdf _CreatePdfReport;
+        private ServiceTickets ticketsService = new ServiceTickets();    
        
 
         [HttpPost]

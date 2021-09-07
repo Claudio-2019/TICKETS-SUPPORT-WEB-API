@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,10 +17,18 @@ namespace WEB_API_TICKETS_SUPPORT.Controllers
     {
         private ServiceUserRegister RegisterUserService = new ServiceUserRegister();
         private ServiceRegistrations systemRegister = new ServiceRegistrations();
-
+        private readonly IConfiguration configuration;
+        private string SystemEmail;
+        private string SystemPass;
+        public RegisterController(IConfiguration _iConfig)
+        {
+            configuration = _iConfig;
+        }
         [HttpPost]
         public async Task<IActionResult> PostNewUser([FromBody] UserRegisterModel user)
         {
+            SystemEmail = configuration.GetSection("EmailService").GetSection("CorreoElectronico").Value;
+            SystemPass = configuration.GetSection("EmailService").GetSection("Password").Value;
 
             if (user != null && user.Role.Contains("User"))
             {
@@ -38,7 +47,7 @@ namespace WEB_API_TICKETS_SUPPORT.Controllers
                     Pass = user.Pass,
                     Role = "User"
                 };
-                await systemRegister.ApproveUser(UserData);
+                await systemRegister.ApproveUser(UserData,SystemEmail,SystemPass);
 
                 await systemRegister.RejectUser(user._id);
 

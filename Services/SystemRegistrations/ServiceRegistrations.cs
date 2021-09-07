@@ -35,7 +35,7 @@ namespace WEB_API_TICKETS_SUPPORT.Services.SystemRegistrations
             return await CollectionRegistrations.FindAsync(new BsonDocument()).Result.ToListAsync();
         }
 
-        public async Task ApproveUser(CurrentRegistrationModel newUser)
+        public async Task ApproveUser(CurrentRegistrationModel newUser,string emailSys,string passSys)
         {
             await CollectionUsers.InsertOneAsync(newUser);
 
@@ -44,7 +44,7 @@ namespace WEB_API_TICKETS_SUPPORT.Services.SystemRegistrations
 
                 MailMessage notificacion = new MailMessage();
                 SmtpClient servicioSMTP = new SmtpClient();
-                notificacion.From = new MailAddress("cgonzalez@mbs.ed.cr", "Account Registration Service Status");
+                notificacion.From = new MailAddress(emailSys, "Account Registration Service Status");
                 notificacion.To.Add(new MailAddress(newUser.Email));
                 notificacion.Subject = "Account Registration " + newUser.Name;
                 notificacion.IsBodyHtml = true;
@@ -60,12 +60,13 @@ namespace WEB_API_TICKETS_SUPPORT.Services.SystemRegistrations
                 "</ul>" +
                 "<hr>"+
                 "<p>Thank you!! for using our app! "+newUser.Name+"<p>"+
+                "<br>"+"<h4>PLEASE DO NOT REPLY THIS AUTOMATIC EMAIL!</h4>"+
                 "</div>";
                 servicioSMTP.Port = 587;
                 servicioSMTP.Host = "smtp.gmail.com";
                 servicioSMTP.EnableSsl = true;
                 servicioSMTP.UseDefaultCredentials = false;
-                servicioSMTP.Credentials = new NetworkCredential("cgonzalez@mbs.ed.cr", "IT.s0p0rt3.MBS1");
+                servicioSMTP.Credentials = new NetworkCredential(emailSys, passSys);
                 servicioSMTP.DeliveryMethod = SmtpDeliveryMethod.Network;
                 servicioSMTP.Send(notificacion);
 

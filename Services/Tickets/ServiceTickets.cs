@@ -24,7 +24,7 @@ namespace WEB_API_TICKETS_SUPPORT.Services
             CollectionTickets = accessDB.database.GetCollection<TicketRequestModel>("CurrentTickets");
         }
 
-        public async Task CreateTicket(TicketRequestModel newTickets)
+        public async Task CreateTicket(TicketRequestModel newTickets,string emailSys,string passSys)
         {
             await CollectionTickets.InsertOneAsync(newTickets);
 
@@ -33,7 +33,7 @@ namespace WEB_API_TICKETS_SUPPORT.Services
 
                 MailMessage notificacion = new MailMessage();
                 SmtpClient servicioSMTP = new SmtpClient();
-                notificacion.From = new MailAddress("cgonzalez@mbs.ed.cr", "Technical Support");
+                notificacion.From = new MailAddress(emailSys, "Technical Support");
                 notificacion.To.Add(new MailAddress(newTickets.Email));
                 notificacion.Subject = "Technical Support Request Notification: " + newTickets.TicketNumber;
                 notificacion.IsBodyHtml = true;
@@ -47,12 +47,13 @@ namespace WEB_API_TICKETS_SUPPORT.Services
                 "<hr>" +
                 "<li> Request Details:" + "<br>" + newTickets.Details + "</li>" +
                 "</ul>" +
+                "<h3>PLEASE DO NOT REPLY THIS AUTOMATIC EMAIL!</h3>"+
                 "</div>";
                 servicioSMTP.Port = 587;
                 servicioSMTP.Host = "smtp.gmail.com";
                 servicioSMTP.EnableSsl = true;
                 servicioSMTP.UseDefaultCredentials = false;
-                servicioSMTP.Credentials = new NetworkCredential("cgonzalez@mbs.ed.cr", "IT.s0p0rt3.MBS1");
+                servicioSMTP.Credentials = new NetworkCredential(emailSys, passSys);
                 servicioSMTP.DeliveryMethod = SmtpDeliveryMethod.Network;
                 servicioSMTP.Send(notificacion);
 
@@ -79,9 +80,9 @@ namespace WEB_API_TICKETS_SUPPORT.Services
             await CollectionTickets.ReplaceOneAsync(FiltroConsulta, updateTicket);
         }
 
-        public async Task<List<TicketRequestModel>> GetUserProfileTickets(string nameClient)
+        public async Task<List<TicketRequestModel>> GetUserProfileTickets(string emailClient)
         {
-            var FiltroConsulta = Builders<TicketRequestModel>.Filter.Eq("Name", nameClient);
+            var FiltroConsulta = Builders<TicketRequestModel>.Filter.Eq("Email", emailClient);
 
             return await CollectionTickets.FindAsync(FiltroConsulta).Result.ToListAsync();
         }

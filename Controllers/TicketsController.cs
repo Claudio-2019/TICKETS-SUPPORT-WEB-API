@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -15,14 +16,23 @@ namespace WEB_API_TICKETS_SUPPORT.Controllers
     public class TicketsController : ControllerBase
     {
         private readonly ServiceTickets TicketsService = new ServiceTickets();
+        private readonly IConfiguration configuration;
+        private string SystemEmail;
+        private string SystemPass;
 
+        public TicketsController(IConfiguration _iConfig)
+        {
+            configuration = _iConfig;
+        }
         [HttpPost]
         public async Task<IActionResult> PostTicket([FromBody] TicketRequestModel ticket)
         {
+            SystemEmail = configuration.GetSection("EmailService").GetSection("CorreoElectronico").Value;
+            SystemPass = configuration.GetSection("EmailService").GetSection("Password").Value;
 
             if (ticket != null)
             {
-                await TicketsService.CreateTicket(ticket);
+                await TicketsService.CreateTicket(ticket,SystemEmail,SystemPass);
 
                 return Ok("SE HA GENERADO EL TICKET: " + ticket.TicketNumber + "SERA ATENDIDO EN LO MAS PRONTO POSIBLE DEPENDIENDO DE LA COLA DE TICKETS");
             }
@@ -38,12 +48,12 @@ namespace WEB_API_TICKETS_SUPPORT.Controllers
 
         }
       
-        [HttpGet("{name}")]
-        public async Task<IActionResult> GetClientTickets(string Name)
+        [HttpGet("{email}")]
+        public async Task<IActionResult> GetClientTickets(string Email)
         {
             List<TicketRequestModel> TicketsFromUser = new List<TicketRequestModel>();
 
-            if (Name.Equals(""))
+            if (Email.Equals(""))
             {
                 return BadRequest("OCURRIO UN ERROR AL CARGAR LO TICKETS POR EL NOMBRE");
             }
@@ -51,7 +61,7 @@ namespace WEB_API_TICKETS_SUPPORT.Controllers
             {
                 await Task.Run(() => {
 
-                    var FilterTicket = TicketsService.GetUserProfileTickets(Name);
+                    var FilterTicket = TicketsService.GetUserProfileTickets(Email);
 
                     foreach (TicketRequestModel item in FilterTicket.Result)
                     {

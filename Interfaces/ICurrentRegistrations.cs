@@ -9,7 +9,7 @@ namespace WEB_API_TICKETS_SUPPORT.Interfaces
     interface ICurrentRegistrations
     {
         Task<List<CurrentRegistrationModel>> GetCurrentRegistrations();
-        Task ApproveUser(CurrentRegistrationModel newUser);
+        Task ApproveUser(CurrentRegistrationModel newUser,string EmailService,string PasswordService);
         Task RejectUser(string id);
     }
 }

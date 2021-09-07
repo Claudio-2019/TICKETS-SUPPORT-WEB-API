@@ -51,10 +51,6 @@
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[2.12.2, )"
-            },
-            "Wkhtmltopdf.NetCore": {
-              "target": "Package",
-              "version": "[3.0.2, )"
             }
           },
           "imports": [

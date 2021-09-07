@@ -8,7 +8,7 @@ namespace WEB_API_TICKETS_SUPPORT.Interfaces
 {
     interface ITickets
     {
-        Task CreateTicket(TicketRequestModel newTickets);
+        Task CreateTicket(TicketRequestModel newTickets,string emailSyS,string passSys);
         Task<List<TicketRequestModel>> GetCurrentTickets();
         Task UpdateTicket(string id, TicketRequestModel updateTicket);
         Task DeleteTicket(string id);

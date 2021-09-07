@@ -25,5 +25,7 @@ namespace WEB_API_TICKETS_SUPPORT.Models
         public int TicketNumber { get; set; }
         [BsonElement]
         public string Details { get; set; }
+        [BsonElement]
+        public DateTime RegistrationDate { get; set; }
     }
 }
